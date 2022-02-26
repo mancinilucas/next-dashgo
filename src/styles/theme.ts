@@ -1,21 +1,25 @@
-//Cores e temas que serão utilizados na applicação a partir do chakra-ui
+//Cores e temas que serão utilizados na aplicação a partir do chakra-ui
 
 import { extendTheme } from "@chakra-ui/react";
 
 export const theme = extendTheme({
   colors:{
     gray: {
-      "50": #F7FAFC,
-      "100": #EDF2F7,
-      "200": #E2E8F0,
-      "300": #CBD5E0,
-      "400": #A0AEC0,
-      "500": #718096,
-      "600": #4A5568,
-      "700": #2D3748,
-      "800": #1A202C,
-      "900": #171923
+      "900": "#181B23",
+      "800": "#1F2029",
+      "700": "#353646",
+      "600": "#4B4D63",
+      "500": "#616480",
+      "400": "#797D9A",
+      "300": "#9699B0",
+      "200": "#B3B5C6",
+      "100": "#D1D2DC",
+      "50": "#EEEEF2",      
     }
+  },
+  fonts:{
+    heading: "Roboto",
+    body: "Roboto",
   },
   styles: {
     global: {
