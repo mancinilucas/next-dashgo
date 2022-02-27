@@ -45,11 +45,19 @@ const options: ApexOptions = {
       '2021-02-28T00:00:00.000Z',
     ],
   },
-  fill: {}
-}  // Sem a tipagem do ApexOptions usar -> 'as const' ao final da declaração;
+  fill: {
+    opacity: 0.3,
+    type: 'gradient',
+    gradient: {
+      shade: 'dark',
+      opacityFrom: 0.7,
+      opacityTo: 0.3,
+    }
+  }
+};  // Sem a tipagem do ApexOptions usar -> 'as const' ao final da declaração;
 
 const series = [
-  { name: "series1", data: [31, 120, 10, 28, 51, 18, 189]}
+  { name: "series1", data: [51, 120, 70, 108, 151, 48, 189]}
 ]
 
 export default function Dashboard(){
@@ -67,6 +75,7 @@ export default function Dashboard(){
           </Box>
           <Box p="8" bg="gray.800" borderRadius={8}>
             <Text fontSize="lg" mb="4">Taxa de abertura</Text>
+            <Chart options={options} series={series} type="area" height={160}/>
           </Box>
         </SimpleGrid>
       </Flex>
