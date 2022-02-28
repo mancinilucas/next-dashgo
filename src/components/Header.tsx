@@ -23,7 +23,7 @@ export function Header(){
         <Text 
           as="span" 
           ml="1" 
-          color="pink.500"
+          color="blue.500"
         >
           .
         </Text>
