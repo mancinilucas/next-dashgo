@@ -1,0 +1,19 @@
+import { Avatar, Box, Flex, Text } from "@chakra-ui/react";
+
+export function Profile(){
+  return(
+    <Flex align="center">
+      <Box mr="4" textAlign="right">
+        <Text>Joao das Neves</Text>
+        <Text 
+          color="gray.300" 
+          fontSize="small"
+        >
+        joaodasneves@gmail.com
+        </Text>
+      </Box>
+
+      <Avatar size="md" name="Joao das Neves" src="https://github.com/mancinilucas.png" />
+    </Flex>
+  );
+}
